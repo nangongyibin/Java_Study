@@ -1,4 +1,4 @@
-package com.ngyb.study.jdbc;
+package com.ngyb.study.java;
 
 import java.sql.*;
 

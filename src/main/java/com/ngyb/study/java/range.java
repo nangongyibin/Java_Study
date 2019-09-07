@@ -1,4 +1,4 @@
-package com.ngyb.study;
+package com.ngyb.study.java;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

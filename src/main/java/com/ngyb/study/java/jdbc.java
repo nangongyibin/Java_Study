@@ -1,11 +1,8 @@
-package com.ngyb.study.jdbc;
+package com.ngyb.study.java;
 
-import com.mysql.cj.jdbc.Driver;
 import org.junit.Test;
 
 import java.sql.*;
-import java.util.Properties;
-import java.util.logging.Logger;
 
 /**
  * 作者：南宫燚滨
