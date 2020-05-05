@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--屏幕适配-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <style>
+        button {
+            width: 100%;
+            height: 48px;
+            background-color: #322fff;
+            border-style: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        button:active {
+            background-color: #ff6b5a;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1" onclick="call1()">调用android方法</button>
+<button id="btn2" onclick="call2()">调用android方法CallBack</button>
+<script src="../js/jquery.min.js"></script>
+<script>
+    // $("#btn1").on("click", function () {
+    //     console.log("点击了按钮1");
+    //     var json = {"msg": "不想加你好友"};
+    //     window.jsInterface.showToast(JSON.stringify(json));
+    // });
+
+    function call1() {
+        console.log("点击了按钮1");
+        var json = {"msg": "不想加你好友"};
+        window.jsInterface.showToast(JSON.stringify(json));
+    }
+
+    function showMessage(json) {
+        alert(JSON.stringify(json))
+    }
+
+    function call2(){
+        console.log("点击了按钮2");
+        var json = {"callback": "receiveData"};
+        window.jsInterface.getNetData(JSON.stringify(json));
+    }
+
+    // $("#btn2").on("click", function () {
+    //     console.log("点击了按钮2");
+    //     var json = {"callback": "receiveData"};
+    //     window.jsInterface.getNetData(JSON.stringify(json));
+    // });
+
+    function receiveData(json) {
+        alert(JSON.stringify(json))
+        console.log(JSON.stringify(json))
+    }
+</script>
+</body>
+</html>
