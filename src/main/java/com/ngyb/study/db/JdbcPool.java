@@ -1,5 +1,6 @@
 package com.ngyb.study.db;
 
+import javax.sql.DataSource;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -9,8 +10,6 @@ import java.sql.SQLFeatureNotSupportedException;
 import java.util.LinkedList;
 import java.util.Properties;
 import java.util.logging.Logger;
-
-import javax.sql.DataSource;
 
 /**
  * 自己动手做一个数据库连接池
@@ -61,7 +60,7 @@ public class JdbcPool implements DataSource {
     /**
      * 连接池
      */
-    LinkedList<Connection> connectionPool = new LinkedList<>();
+    LinkedList<Connection> connectionPool = new LinkedList<Connection>();
 
     /**
      * 注册驱动

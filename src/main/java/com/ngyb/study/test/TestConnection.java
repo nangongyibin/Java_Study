@@ -7,7 +7,6 @@ import com.ngyb.study.utils.JdbcUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DecompressingHttpClient;
-import org.hibernate.validator.internal.util.privilegedactions.GetMethod;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
