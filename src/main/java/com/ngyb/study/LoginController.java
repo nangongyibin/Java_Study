@@ -2,10 +2,10 @@ package com.ngyb.study;
 
 import com.alibaba.fastjson.JSONObject;
 import com.ngyb.study.bean.User;
+import com.ngyb.study.constant.Constants;
 import com.ngyb.study.dao.LoginSessionDao;
 import com.ngyb.study.dao.TimeSettingDao;
 import com.ngyb.study.dao.UserDao;
-import com.ngyb.study.constant.Constants;
 import com.ngyb.study.utils.RSACrypt;
 import com.ngyb.study.utils.TextUtils;
 import com.ngyb.study.utils.TimeUtil;
@@ -43,6 +43,8 @@ public class LoginController extends BaseController implements Constants {
             e.printStackTrace();
         }
     }
+
+
 
     @RequestMapping(value = "login", method = {RequestMethod.GET, RequestMethod.POST})
     protected void login1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -857,4 +859,6 @@ public class LoginController extends BaseController implements Constants {
         stringBuilder.append("username=" + username + "&password=" + password + "" + "&timestamp=" + timestamp);
         return stringBuilder.toString();
     }
+
+
 }

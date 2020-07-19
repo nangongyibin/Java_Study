@@ -2,3 +2,16 @@ server:
   port: 8080
   servlet:
     context-path: /Study
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  thymeleaf:
+    check-template-location: false
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML
+#    cache: false

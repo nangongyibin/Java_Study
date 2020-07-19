@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+    <book id="1">
+        <name>java</name>
+        <price>80</price>
+    </book>
+    <book id="2">
+        <name>数据结构</name>
+        <price>80</price>
+    </book>
+</bookstore>
