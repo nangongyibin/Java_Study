@@ -17,8 +17,13 @@ public class IndexController {
 //        return view;
 //    }
 
+    @RequestMapping("/index")
+    public String indexOne() {
+        return "indexOne";
+    }
+
     @RequestMapping("/")
-    public String index() {
+    public String indexTwo() {
         return "index";
     }
 }

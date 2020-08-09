@@ -26,6 +26,9 @@ public class Login {
             } else {
                 System.out.println("登录失败");
             }
+            resultSet.close();
+            statement.close();
+            con.close();
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("登录失败");
