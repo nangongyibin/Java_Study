@@ -2,6 +2,7 @@ package com.ngyb.study;
 
 import com.alibaba.fastjson.JSONObject;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,7 +17,7 @@ import java.util.Map;
  * 邮箱：nangongyibin@gmail.com
  * 日期：2020/5/5 19:59
  */
-public class BaseController {
+public class BaseController extends HttpServlet {
     protected static String CHARACTE = "utf-8";
 
     /**
